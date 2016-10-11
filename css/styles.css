@@ -1,3 +1,8 @@
+/* Colours
+ * Light Green: 8CC63F
+ * Dark Green: 129447
+ */
+
 html{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -9,47 +14,142 @@ body{
   background: url('../img/bg-Sand-lg.jpg') no-repeat;
 }
 
-#logo{
-  width: 833px;
-  height: 585px;
+/*Buttons*/
+#aboutBut{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  #resumeBut{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #contactBut{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  #fourthBut{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+  /*
+  .tyButton:hover{
+    border: 3px solid #8CC63F;
+  }
+  */
+  .tyButton:hover span{
+    color: #129447;
+  }
+  .tyButton span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+
+/*Overlay*/
+#backOverlay{
+  position: absolute;
+  top:0;
+  left:0;
+  margin:0;
+  display:none;
+  width:100%;
+  height:100%;
+  background-color: #373737;
+  background: rgba(0,0,0,0.9);
+}
+#textOverlay{
+  position:relative;
+  top:0;
+  width: 1000px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  background-color: white;
+  background: rgba(255,255,255,0.7);
+  z-index: 101;
 }
-
-.tyButton{
-  width: 273px;
-  height: 96px;
-  font-size: 3em;
-  color: white;
-  border: 3px solid white;
-  text-align: center;
-  line-height: 89px;
+#closeButtonDiv{
+  float: left;
   cursor: pointer;
 }
-.tyButton span{
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+#closeButton{
+  margin: 5px;
 }
 
-#aboutBut{
-  position: absolute;
-  top: 30px;
-  left: 30px;
+.overlayContent{
+  display:none;
 }
-#resumeBut{
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-#contactBut{
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
-#fourthBut{
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-}
+
+
+@media only screen and (min-width: 768px){
+  #logo{
+    background: url('../img/logo-sm.png') no-repeat;
+    width: 500px;
+    height: 351px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+
+  .tyButton{
+    width: 160px;
+    height: 56px;
+    font-size: 1.8em;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 53px;
+    cursor: pointer;
+  } 
+}/*END min-width : 768px media */
+
+
+@media only screen and (min-width: 992px){
+  #logo{
+    background: url('../img/logo-md.png') no-repeat;
+    width: 625px;
+    height: 439px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+
+  .tyButton{
+    width: 200px;
+    height: 70px;
+    font-size: 2.3em;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 67px;
+    cursor: pointer;
+  } 
+}/*END min-width : 992px media */
+
+@media only screen and (min-width : 1200px){
+  #logo{
+    background: url('../img/logo-lg.png') no-repeat;
+    width: 833px;
+    height: 585px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+
+  .tyButton{
+    width: 273px;
+    height: 96px;
+    font-size: 3em;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 89px;
+    cursor: pointer;
+  }
+} /*END min-width : 1200px media */
+
