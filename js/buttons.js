@@ -2,6 +2,7 @@
 
 //Tickers
 var isOverlayOn = 0;
+var buttonClicked = 0;
 
 //Function to handle the Resume button click
 function resumeClicked(){
@@ -29,6 +30,7 @@ function resumeClicked(){
     resumeButton.style.lineHeight = '45px';
     
     isOverlayOn = 1;
+    buttonClicked = 1;
   }else{
     //Turn the Overlay off
     cancelOverlay(resumeButton);
@@ -43,6 +45,7 @@ function resumeClicked(){
     resumeButton.style.fontSize = '3em';
     resumeButton.style.lineHeight = '89px';
     isOverlayOn = 0;
+    buttonClicked = 0;
   }
 }//END resumeClicked
 
@@ -72,6 +75,7 @@ function aboutClicked(){
     aboutButton.style.lineHeight = '45px';
     
     isOverlayOn = 1;
+    buttonClicked = 2;
   }else{
     //Turn the Overlay off
     cancelOverlay(aboutButton);
@@ -85,6 +89,7 @@ function aboutClicked(){
     aboutButton.style.fontSize = '3em';
     aboutButton.style.lineHeight = '89px';
     isOverlayOn = 0;
+    buttonClicked = 0;
   }
 }//END aboutClicked
 
@@ -114,6 +119,7 @@ function contactClicked(){
     contactButton.style.lineHeight = '45px';
     
     isOverlayOn = 1;
+    buttonClicked = 3;
   }else{
     //Turn the Overlay off
     cancelOverlay(contactButton);
@@ -126,6 +132,7 @@ function contactClicked(){
     contactButton.style.fontSize = '3em';
     contactButton.style.lineHeight = '89px';
     isOverlayOn = 0;
+    buttonClicked = 0;
   }
 }//END contactClicked
 
@@ -155,6 +162,7 @@ function fourthClicked(){
     fourthButton.style.lineHeight = '45px';
        
     isOverlayOn = 1;
+    buttonClicked = 4;
   }else{
     //Turn the Overlay off
     cancelOverlay(fourthButton);
@@ -167,12 +175,12 @@ function fourthClicked(){
     fourthButton.style.fontSize = '3em';
     fourthButton.style.lineHeight = '89px';
     isOverlayOn = 0;
+    buttonClicked =0;
   }
 }//END fourthClicked
 
 //Function to handle the close button click
 function closeOverlays(){
-  
   //Close the Overlays
   var resumeButton = document.getElementById('resumeBut');
   var aboutButton = document.getElementById('aboutBut');
@@ -196,6 +204,49 @@ function closeOverlays(){
   cancelContent(aboutContent);
   cancelContent(contactContent);
   cancelContent(fourthContent);
+  
+  //Restore the button animation size
+  if(buttonClicked === 1){
+  	//Resume Button
+    resumeButton.style.animationName = 'moveTopButtonBack';
+    resumeButton.style.animationDuration = '0.3s';
+    resumeButton.style.top = '30px';
+    resumeButton.style.width = '273px';
+    resumeButton.style.height = '96px';
+    resumeButton.style.fontSize = '3em';
+    resumeButton.style.lineHeight = '89px';
+  }
+  if(buttonClicked === 2){
+  	//About Button
+  	aboutButton.style.animationName = 'moveTopButtonBack';
+    aboutButton.style.animationDuration = '0.3s';
+    aboutButton.style.top = '30px';
+    aboutButton.style.width = '273px';
+    aboutButton.style.height = '96px';
+    aboutButton.style.fontSize = '3em';
+    aboutButton.style.lineHeight = '89px';
+  }
+  if(buttonClicked === 3){
+  	//Contact Button
+  	contactButton.style.animationName = 'moveBottomButtonBack';
+    contactButton.style.animationDuration = '0.3s';
+    contactButton.style.bottom = '30px';
+    contactButton.style.width = '273px';
+    contactButton.style.height = '96px';
+    contactButton.style.fontSize = '3em';
+    contactButton.style.lineHeight = '89px';
+  }
+  if(buttonClicked === 4){
+  	//Fourth Button
+  	fourthButton.style.animationName = 'moveBottomButtonBack';
+    fourthButton.style.animationDuration = '0.3s';
+    fourthButton.style.bottom = '30px';
+    fourthButton.style.width = '273px';
+    fourthButton.style.height = '96px';
+    fourthButton.style.fontSize = '3em';
+    fourthButton.style.lineHeight = '89px';
+  }
+  buttonClicked = 0;
   
 }//END closeOverlays
 
