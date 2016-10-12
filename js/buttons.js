@@ -19,11 +19,29 @@ function resumeClicked(){
     //Display the contents for this page
     resumeContent.style.display = 'block';
     
+    //Move the button
+    resumeButton.style.animationName = 'moveTopButton';
+    resumeButton.style.animationDuration = '0.3s';
+    resumeButton.style.top = '5px';
+    resumeButton.style.width = '180px';
+    resumeButton.style.height = '50px';
+    resumeButton.style.fontSize = '2em';
+    resumeButton.style.lineHeight = '45px';
+    
     isOverlayOn = 1;
   }else{
     //Turn the Overlay off
     cancelOverlay(resumeButton);
     cancelContent(resumeContent);
+    
+    //Move the button back
+    resumeButton.style.animationName = 'moveTopButtonBack';
+    resumeButton.style.animationDuration = '0.3s';
+    resumeButton.style.top = '30px';
+    resumeButton.style.width = '273px';
+    resumeButton.style.height = '96px';
+    resumeButton.style.fontSize = '3em';
+    resumeButton.style.lineHeight = '89px';
     isOverlayOn = 0;
   }
 }//END resumeClicked
@@ -44,11 +62,28 @@ function aboutClicked(){
     //Display the contents
     aboutContent.style.display = 'block';
     
+    //Move the button
+    aboutButton.style.animationName = 'moveTopButton';
+    aboutButton.style.animationDuration = '0.3s';
+    aboutButton.style.top = '5px';
+    aboutButton.style.width = '180px';
+    aboutButton.style.height = '50px';
+    aboutButton.style.fontSize = '2em';
+    aboutButton.style.lineHeight = '45px';
+    
     isOverlayOn = 1;
   }else{
     //Turn the Overlay off
     cancelOverlay(aboutButton);
     cancelContent(aboutContent);
+    //Move the button back
+    aboutButton.style.animationName = 'moveTopButtonBack';
+    aboutButton.style.animationDuration = '0.3s';
+    aboutButton.style.top = '30px';
+    aboutButton.style.width = '273px';
+    aboutButton.style.height = '96px';
+    aboutButton.style.fontSize = '3em';
+    aboutButton.style.lineHeight = '89px';
     isOverlayOn = 0;
   }
 }//END aboutClicked
@@ -69,11 +104,27 @@ function contactClicked(){
     //Display the contents
     contactContent.style.display = 'block';
     
+    //Move the button
+    contactButton.style.animationName = 'moveBottomButton';
+    contactButton.style.animationDuration = '0.3s';
+    contactButton.style.bottom = '5px';
+    contactButton.style.width = '180px';
+    contactButton.style.height = '50px';
+    contactButton.style.fontSize = '2em';
+    contactButton.style.lineHeight = '45px';
+    
     isOverlayOn = 1;
   }else{
     //Turn the Overlay off
     cancelOverlay(contactButton);
     cancelContent(contactContent);
+    contactButton.style.animationName = 'moveBottomButtonBack';
+    contactButton.style.animationDuration = '0.3s';
+    contactButton.style.bottom = '30px';
+    contactButton.style.width = '273px';
+    contactButton.style.height = '96px';
+    contactButton.style.fontSize = '3em';
+    contactButton.style.lineHeight = '89px';
     isOverlayOn = 0;
   }
 }//END contactClicked
@@ -93,12 +144,28 @@ function fourthClicked(){
     
     //Display the contents
     fourthContent.style.display = 'block';
+    
+    //Move the button
+    fourthButton.style.animationName = 'moveBottomButton';
+    fourthButton.style.animationDuration = '0.3s';
+    fourthButton.style.bottom = '5px';
+    fourthButton.style.width = '180px';
+    fourthButton.style.height = '50px';
+    fourthButton.style.fontSize = '2em';
+    fourthButton.style.lineHeight = '45px';
        
     isOverlayOn = 1;
   }else{
     //Turn the Overlay off
     cancelOverlay(fourthButton);
     cancelContent(fourthContent);
+    fourthButton.style.animationName = 'moveBottomButtonBack';
+    fourthButton.style.animationDuration = '0.3s';
+    fourthButton.style.bottom = '30px';
+    fourthButton.style.width = '273px';
+    fourthButton.style.height = '96px';
+    fourthButton.style.fontSize = '3em';
+    fourthButton.style.lineHeight = '89px';
     isOverlayOn = 0;
   }
 }//END fourthClicked
