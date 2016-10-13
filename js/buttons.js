@@ -20,14 +20,37 @@ function resumeClicked(){
     //Display the contents for this page
     resumeContent.style.display = 'block';
     
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
     //Move the button
-    resumeButton.style.animationName = 'moveTopButton';
-    resumeButton.style.animationDuration = '0.3s';
-    resumeButton.style.top = '5px';
-    resumeButton.style.width = '180px';
-    resumeButton.style.height = '50px';
-    resumeButton.style.fontSize = '2em';
-    resumeButton.style.lineHeight = '45px';
+    if(screenWidth === 'exlg'){
+      resumeButton.style.animationName = 'moveExLgTopButton';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '5px';
+      resumeButton.style.width = '180px';
+      resumeButton.style.height = '50px';
+      resumeButton.style.fontSize = '2em';
+      resumeButton.style.lineHeight = '45px';
+    }
+    if(screenWidth === 'lg'){
+      resumeButton.style.animationName = 'moveLgTopButton';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '5px';
+      resumeButton.style.width = '120px';
+      resumeButton.style.height = '50px';
+      resumeButton.style.fontSize = '1.6em';
+      resumeButton.style.lineHeight = '47px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
     
     isOverlayOn = 1;
     buttonClicked = 1;
@@ -36,14 +59,37 @@ function resumeClicked(){
     cancelOverlay(resumeButton);
     cancelContent(resumeContent);
     
-    //Move the button back
-    resumeButton.style.animationName = 'moveTopButtonBack';
-    resumeButton.style.animationDuration = '0.3s';
-    resumeButton.style.top = '30px';
-    resumeButton.style.width = '273px';
-    resumeButton.style.height = '96px';
-    resumeButton.style.fontSize = '3em';
-    resumeButton.style.lineHeight = '89px';
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
+    if(screenWidth === 'exlg'){
+      //Move the button back
+      resumeButton.style.animationName = 'moveExLgTopButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '30px';
+      resumeButton.style.width = '273px';
+      resumeButton.style.height = '96px';
+      resumeButton.style.fontSize = '3em';
+      resumeButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      resumeButton.style.animationName = 'moveLgTopButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '30px';
+      resumeButton.style.width = '200px';
+      resumeButton.style.height = '70px';
+      resumeButton.style.fontSize = '2.3em';
+      resumeButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
     isOverlayOn = 0;
     buttonClicked = 0;
   }
@@ -65,14 +111,37 @@ function aboutClicked(){
     //Display the contents
     aboutContent.style.display = 'block';
     
-    //Move the button
-    aboutButton.style.animationName = 'moveTopButton';
-    aboutButton.style.animationDuration = '0.3s';
-    aboutButton.style.top = '5px';
-    aboutButton.style.width = '180px';
-    aboutButton.style.height = '50px';
-    aboutButton.style.fontSize = '2em';
-    aboutButton.style.lineHeight = '45px';
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
+    //Move the buttons
+    if(screenWidth === 'exlg'){
+      aboutButton.style.animationName = 'moveExLgTopButton';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '5px';
+      aboutButton.style.width = '180px';
+      aboutButton.style.height = '50px';
+      aboutButton.style.fontSize = '2em';
+      aboutButton.style.lineHeight = '45px';
+    }
+    if(screenWidth === 'lg'){
+      aboutButton.style.animationName = 'moveLgTopButton';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '5px';
+      aboutButton.style.width = '120px';
+      aboutButton.style.height = '50px';
+      aboutButton.style.fontSize = '1.6em';
+      aboutButton.style.lineHeight = '47px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
     
     isOverlayOn = 1;
     buttonClicked = 2;
@@ -80,14 +149,39 @@ function aboutClicked(){
     //Turn the Overlay off
     cancelOverlay(aboutButton);
     cancelContent(aboutContent);
+    
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
     //Move the button back
-    aboutButton.style.animationName = 'moveTopButtonBack';
-    aboutButton.style.animationDuration = '0.3s';
-    aboutButton.style.top = '30px';
-    aboutButton.style.width = '273px';
-    aboutButton.style.height = '96px';
-    aboutButton.style.fontSize = '3em';
-    aboutButton.style.lineHeight = '89px';
+    if(screenWidth === 'exlg'){
+      aboutButton.style.animationName = 'moveExLgTopButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '30px';
+      aboutButton.style.width = '273px';
+      aboutButton.style.height = '96px';
+      aboutButton.style.fontSize = '3em';
+      aboutButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      aboutButton.style.animationName = 'moveLgTopButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '30px';
+      aboutButton.style.width = '200px';
+      aboutButton.style.height = '70px';
+      aboutButton.style.fontSize = '2.3em';
+      aboutButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
+    
     isOverlayOn = 0;
     buttonClicked = 0;
   }
@@ -109,14 +203,37 @@ function contactClicked(){
     //Display the contents
     contactContent.style.display = 'block';
     
-    //Move the button
-    contactButton.style.animationName = 'moveBottomButton';
-    contactButton.style.animationDuration = '0.3s';
-    contactButton.style.bottom = '5px';
-    contactButton.style.width = '180px';
-    contactButton.style.height = '50px';
-    contactButton.style.fontSize = '2em';
-    contactButton.style.lineHeight = '45px';
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
+    //Move the buttons
+    if(screenWidth === 'exlg'){
+      contactButton.style.animationName = 'moveExLgBottomButton';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '5px';
+      contactButton.style.width = '180px';
+      contactButton.style.height = '50px';
+      contactButton.style.fontSize = '2em';
+      contactButton.style.lineHeight = '45px';
+    }
+    if(screenWidth === 'lg'){
+      contactButton.style.animationName = 'moveLgBottomButton';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '5px';
+      contactButton.style.width = '120px';
+      contactButton.style.height = '50px';
+      contactButton.style.fontSize = '1.6em';
+      contactButton.style.lineHeight = '47px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
     
     isOverlayOn = 1;
     buttonClicked = 3;
@@ -124,13 +241,39 @@ function contactClicked(){
     //Turn the Overlay off
     cancelOverlay(contactButton);
     cancelContent(contactContent);
-    contactButton.style.animationName = 'moveBottomButtonBack';
-    contactButton.style.animationDuration = '0.3s';
-    contactButton.style.bottom = '30px';
-    contactButton.style.width = '273px';
-    contactButton.style.height = '96px';
-    contactButton.style.fontSize = '3em';
-    contactButton.style.lineHeight = '89px';
+    
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
+    //Move the button back
+    if(screenWidth === 'exlg'){
+      contactButton.style.animationName = 'moveExLgBottomButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '30px';
+      contactButton.style.width = '273px';
+      contactButton.style.height = '96px';
+      contactButton.style.fontSize = '3em';
+      contactButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      contactButton.style.animationName = 'moveLgBottomButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '30px';
+      contactButton.style.width = '200px';
+      contactButton.style.height = '70px';
+      contactButton.style.fontSize = '2.3em';
+      contactButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
+    
     isOverlayOn = 0;
     buttonClicked = 0;
   }
@@ -152,14 +295,37 @@ function fourthClicked(){
     //Display the contents
     fourthContent.style.display = 'block';
     
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
     //Move the button
-    fourthButton.style.animationName = 'moveBottomButton';
-    fourthButton.style.animationDuration = '0.3s';
-    fourthButton.style.bottom = '5px';
-    fourthButton.style.width = '180px';
-    fourthButton.style.height = '50px';
-    fourthButton.style.fontSize = '2em';
-    fourthButton.style.lineHeight = '45px';
+    if(screenWidth === 'exlg'){
+      fourthButton.style.animationName = 'moveExLgBottomButton';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '5px';
+      fourthButton.style.width = '180px';
+      fourthButton.style.height = '50px';
+      fourthButton.style.fontSize = '2em';
+      fourthButton.style.lineHeight = '45px';
+    }
+    if(screenWidth === 'lg'){
+      fourthButton.style.animationName = 'moveLgBottomButton';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '5px';
+      fourthButton.style.width = '120px';
+      fourthButton.style.height = '50px';
+      fourthButton.style.fontSize = '1.6em';
+      fourthButton.style.lineHeight = '47px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
        
     isOverlayOn = 1;
     buttonClicked = 4;
@@ -167,13 +333,40 @@ function fourthClicked(){
     //Turn the Overlay off
     cancelOverlay(fourthButton);
     cancelContent(fourthContent);
-    fourthButton.style.animationName = 'moveBottomButtonBack';
-    fourthButton.style.animationDuration = '0.3s';
-    fourthButton.style.bottom = '30px';
-    fourthButton.style.width = '273px';
-    fourthButton.style.height = '96px';
-    fourthButton.style.fontSize = '3em';
-    fourthButton.style.lineHeight = '89px';
+    
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    
+    //Move the button back
+    if(screenWidth === 'exlg'){
+      fourthButton.style.animationName = 'moveExLgBottomButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '30px';
+      fourthButton.style.width = '273px';
+      fourthButton.style.height = '96px';
+      fourthButton.style.fontSize = '3em';
+      fourthButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      fourthButton.style.animationName = 'moveLgBottomButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '30px';
+      fourthButton.style.width = '200px';
+      fourthButton.style.height = '70px';
+      fourthButton.style.fontSize = '2.3em';
+      fourthButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
+    
+    
     isOverlayOn = 0;
     buttonClicked =0;
   }
@@ -208,43 +401,135 @@ function closeOverlays(){
   //Restore the button animation size
   if(buttonClicked === 1){
   	//Resume Button
-    resumeButton.style.animationName = 'moveTopButtonBack';
-    resumeButton.style.animationDuration = '0.3s';
-    resumeButton.style.top = '30px';
-    resumeButton.style.width = '273px';
-    resumeButton.style.height = '96px';
-    resumeButton.style.fontSize = '3em';
-    resumeButton.style.lineHeight = '89px';
+    //Get the screen width
+    var screenWidth = getScreenWidth();
+    if(screenWidth === 'exlg'){
+      //Move the button back
+      resumeButton.style.animationName = 'moveExLgTopButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '30px';
+      resumeButton.style.width = '273px';
+      resumeButton.style.height = '96px';
+      resumeButton.style.fontSize = '3em';
+      resumeButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      resumeButton.style.animationName = 'moveLgTopButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '30px';
+      resumeButton.style.width = '200px';
+      resumeButton.style.height = '70px';
+      resumeButton.style.fontSize = '2.3em';
+      resumeButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
   }
   if(buttonClicked === 2){
   	//About Button
-  	aboutButton.style.animationName = 'moveTopButtonBack';
-    aboutButton.style.animationDuration = '0.3s';
-    aboutButton.style.top = '30px';
-    aboutButton.style.width = '273px';
-    aboutButton.style.height = '96px';
-    aboutButton.style.fontSize = '3em';
-    aboutButton.style.lineHeight = '89px';
+  	//Get the screen width
+    var screenWidth = getScreenWidth();
+    //Move the button back
+    if(screenWidth === 'exlg'){
+      aboutButton.style.animationName = 'moveExLgTopButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '30px';
+      aboutButton.style.width = '273px';
+      aboutButton.style.height = '96px';
+      aboutButton.style.fontSize = '3em';
+      aboutButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      aboutButton.style.animationName = 'moveLgTopButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '30px';
+      aboutButton.style.width = '200px';
+      aboutButton.style.height = '70px';
+      aboutButton.style.fontSize = '2.3em';
+      aboutButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
   }
   if(buttonClicked === 3){
   	//Contact Button
-  	contactButton.style.animationName = 'moveBottomButtonBack';
-    contactButton.style.animationDuration = '0.3s';
-    contactButton.style.bottom = '30px';
-    contactButton.style.width = '273px';
-    contactButton.style.height = '96px';
-    contactButton.style.fontSize = '3em';
-    contactButton.style.lineHeight = '89px';
+  	//Get the screen width
+    var screenWidth = getScreenWidth();  
+    //Move the button back
+    if(screenWidth === 'exlg'){
+      contactButton.style.animationName = 'moveExLgBottomButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '30px';
+      contactButton.style.width = '273px';
+      contactButton.style.height = '96px';
+      contactButton.style.fontSize = '3em';
+      contactButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      contactButton.style.animationName = 'moveLgBottomButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '30px';
+      contactButton.style.width = '200px';
+      contactButton.style.height = '70px';
+      contactButton.style.fontSize = '2.3em';
+      contactButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
   }
   if(buttonClicked === 4){
   	//Fourth Button
-  	fourthButton.style.animationName = 'moveBottomButtonBack';
-    fourthButton.style.animationDuration = '0.3s';
-    fourthButton.style.bottom = '30px';
-    fourthButton.style.width = '273px';
-    fourthButton.style.height = '96px';
-    fourthButton.style.fontSize = '3em';
-    fourthButton.style.lineHeight = '89px';
+  	//Get the screen width
+    var screenWidth = getScreenWidth();
+    //Move the button back
+    if(screenWidth === 'exlg'){
+      fourthButton.style.animationName = 'moveExLgBottomButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '30px';
+      fourthButton.style.width = '273px';
+      fourthButton.style.height = '96px';
+      fourthButton.style.fontSize = '3em';
+      fourthButton.style.lineHeight = '89px';
+    }
+    if(screenWidth === 'lg'){
+      fourthButton.style.animationName = 'moveLgBottomButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '30px';
+      fourthButton.style.width = '200px';
+      fourthButton.style.height = '70px';
+      fourthButton.style.fontSize = '2.3em';
+      fourthButton.style.lineHeight = '67px';
+    }
+    if(screenWidth === 'md'){
+      
+    }
+    if(screenWidth === 'sm'){
+      
+    }
+    if(screenWidth === 'exsm'){
+      //Probs nothing to do here...maybe
+    }
   }
   buttonClicked = 0;
   
@@ -268,4 +553,29 @@ function cancelOverlay(thisBut){
 
 function cancelContent(thisContent){
   thisContent.style.display = 'none';
+}
+
+//Get the screen width
+function getScreenWidth(){
+	var windowWidth = document.documentElement.clientWidth;
+	var widthValue;
+
+  if (windowWidth >= 1200) {
+    widthValue = 'exlg';
+  }
+	if (windowWidth >= 992 && windowWidth <= 1199) {
+		widthValue = 'lg';
+	}
+	if (windowWidth >= 768 && windowWidth <= 991) {
+		widthValue = 'md';
+	}
+	if (windowWidth >= 480 && windowWidth <= 767) {
+		widthValue = 'sm';
+	}
+	if (windowWidth <= 479) {
+		widthValue = 'exsm';
+	}
+console.log(widthValue);
+return widthValue;
+
 }

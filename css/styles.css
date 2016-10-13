@@ -132,6 +132,70 @@ body{
   #textOverlay{
     width: 760px;
   }
+  @keyframes moveLgTopButton{
+    from{
+      top:30px;
+      width: 200px;
+      height: 70px;
+      font-size: 2.3em;
+      line-height: 67px;
+      }
+    to{
+      top: 5px;
+      width: 120px;
+      height: 50px;
+      font-size:1.6em;
+      line-height: 47px;
+    }
+  }
+  @keyframes moveLgTopButtonBack{
+    from{
+      top: 5px;
+      width: 120px;
+      height: 50px;
+      font-size:1.6em;
+      line-height: 47px;
+      }
+    to{
+      top:30px;
+      width: 200px;
+      height: 70px;
+      font-size: 2.3em;
+      line-height: 67px;
+    }
+  }
+  @keyframes moveLgBottomButton{
+    from{
+      bottom:30px;
+      width: 200px;
+      height: 70px;
+      font-size: 2.3em;
+      line-height: 67px;
+      }
+    to{
+      bottom: 5px;
+      width: 120px;
+      height: 50px;
+      font-size:1.6em;
+      line-height: 47px;
+    }
+  }
+  @keyframes moveLgBottomButtonBack{
+    from{
+      bottom: 5px;
+      width: 120px;
+      height: 50px;
+      font-size:1.6em;
+      line-height: 47px;
+      }
+    to{
+      bottom:30px;
+      width: 200px;
+      height: 70px;
+      font-size: 2.3em;
+      line-height: 67px;
+    }
+  }
   
 }/*END min-width : 992px media */
 
@@ -158,7 +222,7 @@ body{
   #textOverlay{
     width: 1000px;
   }
-  @keyframes moveTopButton{
+  @keyframes moveExLgTopButton{
     from{
       top:30px;
       width: 273px;
@@ -174,7 +238,7 @@ body{
       line-height: 45px;
     }
   }
-  @keyframes moveTopButtonBack{
+  @keyframes moveExLgTopButtonBack{
     from{
       top: 5px;
       width: 180px;
@@ -190,7 +254,7 @@ body{
       line-height: 89px;
     }
   }
-  @keyframes moveBottomButton{
+  @keyframes moveExLgBottomButton{
     from{
       bottom:30px;
       width: 273px;
@@ -206,7 +270,7 @@ body{
       line-height: 45px;
     }
   }
-  @keyframes moveBottomButtonBack{
+  @keyframes moveExLgBottomButtonBack{
     from{
       bottom: 5px;
       width: 180px;
