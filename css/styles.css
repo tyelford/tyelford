@@ -65,7 +65,6 @@ body{
 #textOverlay{
   position:relative;
   top:-20px;
-  width: 1000px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -86,9 +85,7 @@ body{
 }
 
 
-
-
-@media only screen and (min-width: 768px){
+@media (min-width: 768px) and (max-width: 991px){
   /*iPad portait*/
   #logo{
     background: url('../img/logo-sm.png') no-repeat;
@@ -112,8 +109,7 @@ body{
 }/*END min-width : 768px media */
 
 
-@media only screen and (min-width: 992px){
-  /*iPad Landscape*/
+@media (min-width: 992px) and (max-width: 1199px){
   #logo{
     background: url('../img/logo-md.png') no-repeat;
     width: 625px;
@@ -133,15 +129,13 @@ body{
     line-height: 67px;
     cursor: pointer;
   } 
-  
   #textOverlay{
-  position:relative;
-  top:-20px;
-  width: 760px;
+    width: 760px;
   }
+  
 }/*END min-width : 992px media */
 
-@media only screen and (min-width : 1200px){
+@media (min-width : 1200px){
   #logo{
     background: url('../img/logo-lg.png') no-repeat;
     width: 833px;
@@ -160,6 +154,9 @@ body{
     text-align: center;
     line-height: 89px;
     cursor: pointer;
+  }
+  #textOverlay{
+    width: 1000px;
   }
   @keyframes moveTopButton{
     from{
