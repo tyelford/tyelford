@@ -2,3 +2,6 @@ On iPad
 Durning the button clicks animation the text goes very large and then back to the right size after the animation finishes
 Happens on Chrome and Sarafi on iPad
 Text Colour also stays Green after closing the Overlay
+
+On Chrome for mobile (Android)
+Css Animations not working
