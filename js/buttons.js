@@ -53,7 +53,9 @@ function resumeClicked(){
       resumeButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
-      
+      resumeButton.style.animationName = 'moveSmButton';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '-260px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -99,7 +101,9 @@ function resumeClicked(){
       resumeButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      resumeButton.style.animationName = 'moveSmButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -158,7 +162,9 @@ function aboutClicked(){
       aboutButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
-      
+      aboutButton.style.animationName = 'moveSmButton';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '-260px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -204,7 +210,9 @@ function aboutClicked(){
       aboutButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      aboutButton.style.animationName = 'moveSmButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -264,7 +272,9 @@ function contactClicked(){
       contactButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
-      
+      contactButton.style.animationName = 'moveSmButton';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.top = '-260px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -310,7 +320,9 @@ function contactClicked(){
       contactButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      contactButton.style.animationName = 'moveSmButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -370,7 +382,9 @@ function fourthClicked(){
       fourthButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
-      
+      fourthButton.style.animationName = 'moveSmButton';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.top = '-260px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -416,7 +430,9 @@ function fourthClicked(){
       fourthButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      fourthButton.style.animationName = 'moveSmButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -489,7 +505,9 @@ function closeOverlays(){
       resumeButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      resumeButton.style.animationName = 'moveSmButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -529,7 +547,9 @@ function closeOverlays(){
       aboutButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      aboutButton.style.animationName = 'moveSmButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -569,7 +589,9 @@ function closeOverlays(){
       contactButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      contactButton.style.animationName = 'moveSmButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -609,7 +631,9 @@ function closeOverlays(){
       fourthButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
-      
+      fourthButton.style.animationName = 'moveSmButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.top = '20px';
     }
     if(screenWidth === 'exsm'){
       //Probs nothing to do here...maybe
@@ -659,7 +683,6 @@ function getScreenWidth(){
 	if (windowWidth <= 479) {
 		widthValue = 'exsm';
 	}
-console.log(widthValue);
 return widthValue;
 
 }

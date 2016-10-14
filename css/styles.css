@@ -14,27 +14,7 @@ body{
   background: url('../img/bg-Sand-lg.jpg') no-repeat;
 }
 
-/*Buttons*/
-#aboutBut{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
-#resumeBut{
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-#contactBut{
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-}
-#fourthBut{
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-}
+
 /*
 .tyButton:hover{
   border: 3px solid #8CC63F;
@@ -84,6 +64,86 @@ body{
   display:none;
 }
 
+@media (min-width: 410px) and (max-width: 767px){
+  /*Mobile view*/
+ #logo{
+    background: url('../img/logo-exsm.png') no-repeat;
+    width: 250px;
+    height: 176px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;  
+  }
+  .tyButton{
+    position: relative;
+    top:20px;
+    margin-left: 10px;
+    float: left;
+    width: 80px;
+    height: 30px;
+    font-size: 1em;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+  #buttonWrapper{
+    position:relative;
+    width:384px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 50px;
+  }
+  #textOverlay{
+    top: 50px;
+    width: 100%;
+    padding-bottom: -50px;
+  }
+    /*Buttons*/
+  #aboutBut{
+  }
+  #resumeBut{
+  }
+  #contactBut{
+  }
+  #fourthBut{
+  }
+  @-webkit-keyframes moveSmButton{
+    from{
+      top:20px;
+    }
+    to{
+      top:-260px;
+    }
+  }
+  @keyframes moveSmButton{
+    from{
+      top:20px;
+    }
+    to{
+      top:-260px;
+    }
+  }
+  @-webkit-keyframes moveSmButtonBack{
+    from{
+      top:-260px;
+    }
+    to{
+      top:20px;
+    }
+  }
+  @keyframes moveSmButtonBack{
+    from{
+      top:-260px;
+    }
+    to{
+      top:20px;
+    }
+  }
+  
+}
 
 @media (min-width: 768px) and (max-width: 991px){
   /*iPad portait*/
@@ -95,7 +155,27 @@ body{
     margin-right: auto;
     margin-top: 100px;
   }
-
+  /*Buttons*/
+  #aboutBut{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  #resumeBut{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #contactBut{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  #fourthBut{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
   .tyButton{
     width: 160px;
     height: 56px;
@@ -194,7 +274,27 @@ body{
     margin-right: auto;
     margin-top: 100px;
   }
-
+  /*Buttons*/
+  #aboutBut{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  #resumeBut{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #contactBut{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  #fourthBut{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
   .tyButton{
     width: 200px;
     height: 70px;
@@ -284,7 +384,27 @@ body{
     margin-right: auto;
     margin-top: 100px;
   }
-
+  /*Buttons*/
+  #aboutBut{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  #resumeBut{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #contactBut{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  #fourthBut{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
   .tyButton{
     width: 273px;
     height: 96px;
