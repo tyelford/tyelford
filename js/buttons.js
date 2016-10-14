@@ -43,7 +43,14 @@ function resumeClicked(){
       resumeButton.style.lineHeight = '47px';
     }
     if(screenWidth === 'md'){
-      
+      resumeButton.style.animationName = 'moveMdTopButton';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '5px';
+      resumeButton.style.right = '5px';
+      resumeButton.style.width = '60px';
+      resumeButton.style.height = '23px';
+      resumeButton.style.fontSize = '0.8em';
+      resumeButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
       
@@ -82,7 +89,14 @@ function resumeClicked(){
       resumeButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      resumeButton.style.animationName = 'moveMdTopButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '30px';
+      resumeButton.style.right = '30px';
+      resumeButton.style.width = '160px';
+      resumeButton.style.height = '56px';
+      resumeButton.style.fontSize = '1.8em';
+      resumeButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -134,7 +148,14 @@ function aboutClicked(){
       aboutButton.style.lineHeight = '47px';
     }
     if(screenWidth === 'md'){
-      
+      aboutButton.style.animationName = 'moveMdTopButton';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '5px';
+      aboutButton.style.left = '5px';
+      aboutButton.style.width = '60px';
+      aboutButton.style.height = '23px';
+      aboutButton.style.fontSize = '0.8em';
+      aboutButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
       
@@ -173,7 +194,14 @@ function aboutClicked(){
       aboutButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      aboutButton.style.animationName = 'moveMdTopButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '30px';
+      aboutButton.style.left = '30px';
+      aboutButton.style.width = '160px';
+      aboutButton.style.height = '56px';
+      aboutButton.style.fontSize = '1.8em';
+      aboutButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -226,7 +254,14 @@ function contactClicked(){
       contactButton.style.lineHeight = '47px';
     }
     if(screenWidth === 'md'){
-      
+      contactButton.style.animationName = 'moveMdBottomButton';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '5px';
+      contactButton.style.left = '5px';
+      contactButton.style.width = '60px';
+      contactButton.style.height = '23px';
+      contactButton.style.fontSize = '0.8em';
+      contactButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
       
@@ -265,7 +300,14 @@ function contactClicked(){
       contactButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      contactButton.style.animationName = 'moveMdBottomButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '30px';
+      contactButton.style.left = '30px';
+      contactButton.style.width = '160px';
+      contactButton.style.height = '56px';
+      contactButton.style.fontSize = '1.8em';
+      contactButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -318,7 +360,14 @@ function fourthClicked(){
       fourthButton.style.lineHeight = '47px';
     }
     if(screenWidth === 'md'){
-      
+      fourthButton.style.animationName = 'moveMdBottomButton';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '5px';
+      fourthButton.style.right = '5px';
+      fourthButton.style.width = '60px';
+      fourthButton.style.height = '23px';
+      fourthButton.style.fontSize = '0.8em';
+      fourthButton.style.lineHeight = '21px';
     }
     if(screenWidth === 'sm'){
       
@@ -357,7 +406,14 @@ function fourthClicked(){
       fourthButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      fourthButton.style.animationName = 'moveMdBottomButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '30px';
+      fourthButton.style.right = '30px';
+      fourthButton.style.width = '160px';
+      fourthButton.style.height = '56px';
+      fourthButton.style.fontSize = '1.8em';
+      fourthButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -423,7 +479,14 @@ function closeOverlays(){
       resumeButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      resumeButton.style.animationName = 'moveMdTopButtonBack';
+      resumeButton.style.animationDuration = '0.3s';
+      resumeButton.style.top = '30px';
+      resumeButton.style.right = '30px';
+      resumeButton.style.width = '160px';
+      resumeButton.style.height = '56px';
+      resumeButton.style.fontSize = '1.8em';
+      resumeButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -456,7 +519,14 @@ function closeOverlays(){
       aboutButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      aboutButton.style.animationName = 'moveMdTopButtonBack';
+      aboutButton.style.animationDuration = '0.3s';
+      aboutButton.style.top = '30px';
+      aboutButton.style.left = '30px';
+      aboutButton.style.width = '160px';
+      aboutButton.style.height = '56px';
+      aboutButton.style.fontSize = '1.8em';
+      aboutButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -489,7 +559,14 @@ function closeOverlays(){
       contactButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      contactButton.style.animationName = 'moveMdBottomButtonBack';
+      contactButton.style.animationDuration = '0.3s';
+      contactButton.style.bottom = '30px';
+      contactButton.style.left = '30px';
+      contactButton.style.width = '160px';
+      contactButton.style.height = '56px';
+      contactButton.style.fontSize = '1.8em';
+      contactButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       
@@ -522,7 +599,14 @@ function closeOverlays(){
       fourthButton.style.lineHeight = '67px';
     }
     if(screenWidth === 'md'){
-      
+      fourthButton.style.animationName = 'moveMdBottomButtonBack';
+      fourthButton.style.animationDuration = '0.3s';
+      fourthButton.style.bottom = '30px';
+      fourthButton.style.right = '30px';
+      fourthButton.style.width = '160px';
+      fourthButton.style.height = '56px';
+      fourthButton.style.fontSize = '1.8em';
+      fourthButton.style.lineHeight = '53px';
     }
     if(screenWidth === 'sm'){
       

@@ -106,6 +106,82 @@ body{
     line-height: 53px;
     cursor: pointer;
   } 
+  #textOverlay{
+    width: 760px;
+  }
+  
+  @keyframes moveMdTopButton{
+    from{
+      top:30px;
+      right: 30px;
+      width: 160px;
+      height: 56px;
+      font-size: 1.8em;
+      line-height: 53px;
+      }
+    to{
+      top: 5px;
+      right: 5px;
+      width: 60px;
+      height: 23px;
+      font-size: 0.8em;
+      line-height: 21px;
+    }
+  }
+  @keyframes moveMdTopButtonBack{
+    from{
+      top: 5px;
+      right: 5px;
+      width: 60px;
+      height: 23px;
+      font-size: 0.8em;
+      line-height: 21px;
+      }
+    to{
+      top:30px;
+      right: 30px;
+      width: 160px;
+      height: 56px;
+      font-size: 1.8em;
+      line-height: 53px;
+    }
+  }
+  @keyframes moveMdBottomButton{
+    from{
+      bottom:30px;
+      right: 30px;
+      width: 160px;
+      height: 56px;
+      font-size: 1.8em;
+      line-height: 53px;
+      }
+    to{
+      bottom: 5px;
+      right: 5px;
+      width: 60px;
+      height: 23px;
+      font-size: 0.8em;
+      line-height: 21px;
+    }
+  }
+  @keyframes moveMdBottomButtonBack{
+    from{
+      bottom: 5px;
+      right: 5px;
+      width: 60px;
+      height: 23px;
+      font-size: 0.8em;
+      line-height: 21px;
+      }
+    to{
+      bottom:30px;
+      right: 30px;
+      width: 160px;
+      height: 56px;
+      font-size: 1.8em;
+      line-height: 53px;s
+    }
+  }
 }/*END min-width : 768px media */
 
 
