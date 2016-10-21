@@ -19,7 +19,10 @@
 	
 	<body>
 	  
+	  <!--
 	  <div id='screensize' style='position:absolute;top:0;left:0; color:white; width:100px; height: 30px; margin-left:auto; margin-right:auto'>screensize</div>
+	  -->
+	  
 	  
 	  <!--Logo Div-->
 	  <div id='logo'>
@@ -58,7 +61,26 @@
 	      
 	      <!--Resume Content-->
 	      <div class='overlayContent' id='resumeContent'>
-          <h2>Resume</h2>
+          
+          <div id='resumeHeader'>
+            <h2>Curriculum Vitae for Tyson Elford</h2>
+          </div>
+          
+          <div class='dropSection' id='resumeAboutMe' >
+            <h3 onclick='resumeAboutMeClicked()'>About Me</h3>
+            <p>This is a tiny little blurb about me. I like stuff and things and tinkering with other stuff and things</p>
+          </div>
+          
+          <div class='dropSection' id='resumeWorkEx'>
+            <h3>Experience</h3>
+            <p>Here is some experience</p>
+          </div>
+          
+          <div class='dropSection' id='resumeEdu'>
+            <h3>Education</h3>
+            <p>This is my educations</p>
+          </div>
+          
         </div>
         
         <!--Contact Content-->
@@ -76,6 +98,7 @@
 	  
 	  
 	  <script src='js/buttons.js'></script>
+	  <script src='js/dropSections.js'></script>
 	  <script src='js/screensize.js'></script>
 	  
 	</body>
