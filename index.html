@@ -17,90 +17,88 @@
     
   </head>
 	
-	<body>
-	  
-	  <!--
-	  <div id='screensize' style='position:absolute;top:0;left:0; color:white; width:100px; height: 30px; margin-left:auto; margin-right:auto'>screensize</div>
-	  -->
-	  
-	  
-	  <!--Logo Div-->
-	  <div id='logo'>
-	    <!--<img src='img/logo-lg.png'>-->
-	  </div>
-	  <!--End Logo Div-->
-	  
-	  <!--Buttons-->
-	  <div id='buttonWrapper'>
-  	  <div id='aboutBut' class='tyButton' onclick='aboutClicked()'>
-  	    <span>ABOUT</span>
-  	  </div>
-  	  <div id='resumeBut' class='tyButton' onclick='resumeClicked()'>
-        <span>RESUME</span>
-      </div>
-      <div id='contactBut' class='tyButton' onclick='contactClicked()'>
-        <span>CONTACT</span>
-      </div>
-      <div id='fourthBut' class='tyButton' onclick='fourthClicked()'>
-        <span>FOURTH</span>
-      </div>
+<body>
+
+  <!--
+  <div id='screensize' style='position:absolute;top:0;left:0; color:white; width:100px; height: 30px; margin-left:auto; margin-right:auto'>screensize</div>
+  -->
+  <!--Logo Div-->
+  <div id='logo'>
+    <!--<img src='img/logo-lg.png'>-->
+  </div>
+  <!--End Logo Div-->
+  <!--Buttons-->
+  <div id='buttonWrapper'>
+    <div id='aboutBut' class='tyButton' onclick='aboutClicked()'>
+      <span>ABOUT</span>
     </div>
-	  
-	  
-	  <!--Overlays-->
-	  <div id='backOverlay'>
-	    <div id='textOverlay'>
-	      <div id='closeButtonDiv' onclick='closeOverlays()'><img src='img/closeButton.png' id='closeButton'></div>
-	      
-	      
-	      <!--About Content-->
-	      <div class='overlayContent' id='aboutContent'>
-	        <h2>About</h2>
-	      </div>
-	      
-	      
-	      <!--Resume Content-->
-	      <div class='overlayContent' id='resumeContent'>
-          
-          <div id='resumeHeader'>
-            <h2>Curriculum Vitae for Tyson Elford</h2>
-          </div>
-          
-          <div class='dropSection' id='resumeAboutMe' >
-            <h3 onclick='resumeAboutMeClicked()'>About Me</h3>
-            <p>This is a tiny little blurb about me. I like stuff and things and tinkering with other stuff and things</p>
-          </div>
-          
-          <div class='dropSection' id='resumeWorkEx'>
-            <h3>Experience</h3>
-            <p>Here is some experience</p>
-          </div>
-          
-          <div class='dropSection' id='resumeEdu'>
-            <h3>Education</h3>
-            <p>This is my educations</p>
-          </div>
-          
+    <div id='resumeBut' class='tyButton' >
+      <span>RESUME</span>
+    </div>
+    <div id='contactBut' class='tyButton' onclick='contactClicked()'>
+      <span>CONTACT</span>
+    </div>
+    <div id='fourthBut' class='tyButton' onclick='fourthClicked()'>
+      <span>FOURTH</span>
+    </div>
+  </div>
+
+
+  <!--Overlays-->
+  <div id='backOverlay'>
+    <div id='textOverlay'>
+      <div id='closeButtonDiv' onclick='closeOverlays()'><img src='img/closeButton.png' id='closeButton'></div>
+
+
+      <!--About Content-->
+      <div class='overlayContent' id='aboutContent'>
+        <h2>About</h2>
+      </div>
+
+
+      <!--Resume Content-->
+      <div class='overlayContent' id='resumeContent'>
+
+        <div id='resumeHeader'>
+          <h2>Curriculum Vitae for Tyson Elford</h2>
         </div>
-        
-        <!--Contact Content-->
-        <div class='overlayContent' id='contactContent'>
-          <h2>Contact</h2>
+
+        <div class='dropSection' id='resumeAboutMe'>
+          <h3 onclick='resumeAboutMeClicked()'>About Me</h3>
+          <p>This is a tiny little blurb about me. I like stuff and things and tinkering with other stuff and things</p>
         </div>
-        
-        <!--Fourth Content-->
-        <div class='overlayContent' id='fourthContent'>
-          <h2>Fourth</h2>
+
+        <div class='dropSection' id='resumeWorkEx'>
+          <h3>Experience</h3>
+          <p>Here is some experience</p>
         </div>
-	      
-	    </div>
-	  </div>
-	  
-	  
-	  <script src='js/buttons.js'></script>
-	  <script src='js/dropSections.js'></script>
-	  <script src='js/screensize.js'></script>
-	  
-	</body>
+
+        <div class='dropSection' id='resumeEdu'>
+          <h3>Education</h3>
+          <p>This is my educations</p>
+        </div>
+
+      </div>
+
+      <!--Contact Content-->
+      <div class='overlayContent' id='contactContent'>
+        <h2>Contact</h2>
+      </div>
+
+      <!--Fourth Content-->
+      <div class='overlayContent' id='fourthContent'>
+        <h2>Fourth</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src='js/buttonsQuery.js'></script>
+  <!--<script src='js/buttons.js'></script>-->
+  <script src='js/dropSections.js'></script>
+  <script src='js/screensize.js'></script>
+
+</body>
 	
 </html>

@@ -11,3 +11,5 @@ Some of the choices that I have thought of:
 While I think over this going to start looking into the more important part - front end.
 
 Starting to create a mockup
+
+After Much thinking about it, i've deceided to use jQuery. Browser support is pretty tricky without for what I am trying to do.
